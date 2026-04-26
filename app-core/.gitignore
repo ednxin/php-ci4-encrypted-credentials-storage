@@ -1,0 +1,14 @@
+/.env
+/app-core/.env
+/vendor/
+/node_modules/
+/composer.lock
+/npm-debug.log
+/yarn-error.log
+/writable/cache/
+/writable/debugbar/
+/writable/logs/
+/writable/session/
+/writable/uploads/
+/.vscode/
+.idea/
