@@ -4,7 +4,7 @@
 <div class="card card-soft p-4 p-md-5">
     <h1 class="h4 fw-bold mb-4">Create User</h1>
 
-    <form method="post" action="<?= site_url('/users/store') ?>">
+    <form method="post" action="<?= base_url('/users/store') ?>">
         <?= csrf_field() ?>
         <div class="row g-3">
             <div class="col-md-6">

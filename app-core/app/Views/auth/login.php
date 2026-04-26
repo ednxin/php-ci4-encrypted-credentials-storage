@@ -10,7 +10,7 @@
             </div>
             
 
-            <form method="post" action="<?= site_url('/login') ?>" novalidate>
+            <form method="post" action="<?= base_url('/login') ?>" novalidate>
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <label class="form-label" for="username">Username</label>
@@ -35,6 +35,7 @@
                     >
                 </div>
                 <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
+                
             </form>
         </div>
     </div>

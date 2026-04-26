@@ -38,7 +38,7 @@
                     <td><?= esc($assignedNames !== [] ? implode(', ', $assignedNames) : 'No assignments') ?></td>
                     <td class="text-end">
                         <a class="btn btn-sm btn-outline-primary" href="<?= site_url('/users/edit/' . $user['id']) ?>">Edit</a>
-                        <form class="d-inline" method="post" action="<?= site_url('/users/delete/' . $user['id']) ?>" onsubmit="return confirm('Delete this user?');">
+                        <form class="d-inline" method="post" action="<?= base_url('/users/delete/' . $user['id']) ?>" onsubmit="return confirm('Delete this user?');">
                             <?= csrf_field() ?>
                             <button class="btn btn-sm btn-outline-danger" type="submit">Delete</button>
                         </form>

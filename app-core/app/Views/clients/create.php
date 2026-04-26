@@ -4,7 +4,7 @@
 <div class="card card-soft p-4 p-md-5">
     <h1 class="h4 fw-bold mb-4">Create Client</h1>
 
-    <form method="post" action="<?= site_url('/clients/store') ?>">
+    <form method="post" action="<?= base_url('/clients/store') ?>">
         <?= csrf_field() ?>
         <div class="mb-3">
             <label class="form-label" for="client_name">Client Name</label>

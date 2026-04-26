@@ -6,7 +6,7 @@
     <p class="text-muted">You may load the existing encrypted data by providing the master key, then edit and re-encrypt.</p>
 
     <div class="mb-3">
-        <form method="post" action="<?= site_url('/clients/load/' . $client['id']) ?>" class="d-flex gap-2">
+        <form method="post" action="<?= base_url('/clients/load/' . $client['id']) ?>" class="d-flex gap-2">
             <?= csrf_field() ?>
             <input type="password" id="load_master_key" name="master_key" class="form-control" placeholder="Enter master key to load existing data" minlength="12" required>
             <button class="btn btn-outline-primary" type="submit">Load Existing</button>
@@ -16,7 +16,7 @@
     <?php $hasDecrypted = (old('client_data') !== null) || (isset($decryptedData) && $decryptedData !== null); ?>
 
     <?php if ($hasDecrypted): ?>
-    <form method="post" action="<?= site_url('/clients/update/' . $client['id']) ?>">
+    <form method="post" action="<?= base_url('/clients/update/' . $client['id']) ?>">
         <?= csrf_field() ?>
         <div class="mb-3">
             <label class="form-label" for="client_name">Client Name</label>

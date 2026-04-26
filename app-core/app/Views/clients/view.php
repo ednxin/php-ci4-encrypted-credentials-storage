@@ -8,7 +8,7 @@
             <p class="mb-2"><strong>ID:</strong> <?= esc((string) $client['id']) ?></p>
             <p class="mb-3"><strong>Name:</strong> <?= esc($client['client_name']) ?></p>
 
-            <form method="post" action="<?= site_url('/clients/view/' . $client['id'] . '/decrypt') ?>">
+            <form method="post" action="<?= base_url('/clients/view/' . $client['id'] . '/decrypt') ?>">
                 <?= csrf_field() ?>
                 <label class="form-label" for="master_key">Master Key Required for Decryption</label>
                 <input type="password" id="master_key" name="master_key" class="form-control mb-3" minlength="12" required>

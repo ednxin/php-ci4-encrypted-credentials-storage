@@ -7,7 +7,7 @@
             <h1 class="h4 fw-bold mb-3">Change Password</h1>
             <p class="text-muted">Use a strong password (minimum 10 characters).</p>
 
-            <form method="post" action="<?= site_url('/account/password') ?>">
+            <form method="post" action="<?= base_url('/account/password') ?>">
                 <?= csrf_field() ?>
 
                 <div class="mb-3">
